@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>#EndTheSchism2054</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    .cross {
+      font-size: 2em;
+      color: #c00;
+      text-shadow: 2px 2px #fff;
+    }
+  
+    .banner{
+      height:150px;
+      overflow:hidden;
+      background-image: url("banner.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+        background-position: center;
+
+      }
+      
+    .sticky{
+      position: sticky;
+      top:0;
+    }
+    /* Basic styles for the navigation bar */
+    .navbar { 
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
+      
+    }
+
+    /* Styles for the logo */
+    .navbar img {
+      height: 60px;
+    }
+
+    /* Styles for the navigation links */
+    .navbar ul {
+      display: flex;
+      list-style: none;
+    }
+
+    .navbar ul li {
+      margin-left: 20px;
+    }
+
+    .navbar ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    /* Styles for the hamburger menu */
+    .hamburger {
+      display: none;
+    }
+
+    .hamburger-menu {
+      display: none;
+      /*position: sticky;*/
+      top: 60px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #333;
+      color: white;
+      z-index: 1;
+    }
+
+    .hamburger-menu ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      list-style: none;
+      padding: 0;
+    }
+
+    .hamburger-menu ul li {
+      margin: 20px 0;
+    }
+
+    .hamburger-menu ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+    /* Show the hamburger menu on mobile */
+    @media (max-width: 767px) {
+      .navbar ul {
+        display: none;
+      }
+      
+      .hamburger {
+        display: block;
+        cursor: pointer;
+      }
+
+      .show-menu {
+        display: block;
+      }
+    }
+    
+    .news-box {
+   border: 1px solid #ccc;
+   padding: 10px;
+   margin-bottom: 20px;
+   background-color: #f9f9f9;
+}
+
+.news-image img{
+  height: 100px;
+}
+
+.news-image{
+  display: inline-block;
+}
+
+.news-info{
+  display: inline-block;
+  max-width: 80%; /* set a maximum width */
+  overflow: hidden; /* hide the overflow */
+  text-overflow: ellipsis; /* add an ellipsis at the end of the text */
+}
+
+.news-box a {
+   text-decoration: none;
+   /*color: #333;*/
+   display:block;
+   
+}
+
+.news-box a:hover {
+   background-color: #ddd;
+}
+
+.news-title {
+   font-size: 24px;
+   margin-top: 0;
+}
+
+.news-date {
+   font-size: 14px;
+   margin-bottom: 5px;
+   color: #999;
+}
+
+.news-description {
+   font-size: 18px;
+   margin-bottom: 0;
+   white-space: nowrap;
+   overflow: hidden; 
+   text-overflow: ellipsis; 
+}
+
+
+
+  </style>
+</head>
+<body>
+  <div class="banner"></div>
+  
+  <div class="sticky">
+    <nav class="navbar sticky">
+      <img src="logo2.png">
+      <h1>#EndTheSchism2054</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="news2.html">News</a></li>
+        <li><a href="comingsoon.html">Resources</a></li>
+        <li><a href="comingsoon.html">Get Involved</a></li>
+        <li><a href="comingsoon.html">Contact</a></li>
+      </ul>
+      <div class="hamburger sticky">&#9776;</div>
+    </nav>
+    <div class="hamburger-menu sticky">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="news2.html">News</a></li>
+        <li><a href="comingsoon.html">Resources</a></li>
+        <li><a href="comingsoon.html">Get Involved</a></li>
+        <li><a href="comingsoon.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <h1>News</h1>
+ 
+<!-- News section -->
+<div class="news-box">
+   <a href="news_data/A Call To Prayer.pdf" target="_blank">
+      <div class="news-image">
+         <img src="news_data/images/image1.png" alt="News Image">
+      </div>
+      <div class="news-info">
+         <h3 class="news-title">A Call To Prayer (Click for Full Article)</h3>
+         <p class="news-date">April 9, 2023</p>
+         <p class="news-description">...I petition you all who are members of the Body of
+Christ and wish to be members of the Body of Christ to pray for unity. The Church laments the
+sins of man, which cloud the way of truth and the path of righteousness. </p>
+      </div>
+   </a>
+</div>
+<hr/>
+  <div class="footer">
+      
+			<!-- hitwebcounter Code START -->
+			 <div class="countr" style="margin: auto; display: inline-block;">
+            You seem to be visitor # 
+		      	<a href="https://www.hitwebcounter.com" target="_blank">
+            <img style= "height: 18px;" src="https://hitwebcounter.com/counter/counter.php?page=8456198&style=0025&nbdigits=9&type=ip&initCount=0" title="Free Counter" Alt="web counter"   border="0" /></a>                                          
+            <br/>
+            with page-load #
+            <a href="https://www.hitwebcounter.com" target="_blank">
+            <img style= "height: 18px;" src="https://hitwebcounter.com/counter/counter.php?page=8456270&style=0025&nbdigits=9&type=page&initCount=0" title="Free Counter" Alt="web counter"   border="0" /></a>                                    
+            <br/>
+        </div>
+			<!-- hitwebcounter Code END -->
+
+      <span style="float: right; margin: auto;"> Last Updated 4-09-2023 </span>
+			
+      <span style="display: inline-block; width:100%; text-align: center;">All rights belong to their respective owners</span>
+	</div>
+
+
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const menu = document.querySelector('.hamburger-menu');
+
+    // Check if it's a mobile device
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+    if (true) {
+      hamburger.addEventListener  ('click', () => {
+    menu.classList.toggle('show-menu');
+  });
+}
+  </script>
+</body>
+</html>
