@@ -192,23 +192,41 @@
       </ul>
     </div>
   </div>
-  <h1>News</h1>
+  <h1>Contact #EndTheSchism2054</h1>
  
-<!-- News section -->
-<div class="news-box">
-   <a href="news_data/A Call To Prayer.pdf" target="_blank">
-      <div class="news-image">
-         <img src="news_data/images/image1.png" alt="News Image">
-      </div>
-      <div class="news-info">
-         <h3 class="news-title">A Call To Prayer (Click for Full Article)</h3>
-         <p class="news-date">April 9, 2023</p>
-         <p class="news-description">...I petition you all who are members of the Body of
-Christ and wish to be members of the Body of Christ to pray for unity. The Church laments the
-sins of man, which cloud the way of truth and the path of righteousness. </p>
-      </div>
-   </a>
-</div>
+<!-- Contact -->
+<script>
+    function caesarCipher(str, shift) {
+      var result = '';
+      for (var i = 0; i < str.length; i++) {
+        var char = str[i];
+        var code = char.charCodeAt(0);
+        // Apply the Caesar cipher shift to Unicode characters
+        code = (code + shift) % 65536;
+        result += String.fromCharCode(code);
+      }
+      return result;
+    }
+
+    window.addEventListener('DOMContentLoaded', function() {
+      // Set the encrypted email address
+      var encryptedEmail = "࡫ࡴࡪࡺ࡮࡫ࡹࡩ࡮࡯ࡹࡳ࠸࠶࠻࠺ࡆ࡭ࡳࡧ࡯ࡲ࠴ࡩࡵࡳ";
+
+      // Decrypt the encrypted email address using Caesar cipher with shift value -2054
+      var decryptedEmail = caesarCipher(encryptedEmail, -2054);
+
+      // Update the HTML element with the decrypted email address
+      var emailElement = document.getElementById('email');
+      emailElement.innerHTML = '<a href="mailto:' + decryptedEmail + '">' + decryptedEmail + '</a>';
+    });
+  </script>
+	<img style="width:25%;" src="news_data/images/image1.png">
+	<p>Have an Inquiry? Suggestion? Disagreement? Critique? Well look no further.</p>
+	<p>You can reach me at: <span id="email"></span></p>
+
+
+<!-- Contact -->
+
 <hr/>
   <div class="footer">
       
