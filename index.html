@@ -158,12 +158,54 @@
    overflow: hidden; 
    text-overflow: ellipsis; 
 }
-
+.countdown {
+            margin: auto;
+            color: white;
+            font-weight: bold;
+            font-size: 5vmin;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
   </style>
 </head>
 <body>
-  <div class="banner"></div>
-  
+<div class="banner">
+      <div class="countdown"></div>
+
+	 <script>
+        // Set the countdown target date to June 16th, 2054
+        const targetDate = new Date('2054-06-16');
+
+        function updateCountdown() {
+            // Get the current date and time
+            const now = new Date();
+
+            // Calculate the time difference between the current date and the target date
+            const timeDifference = targetDate - now;
+
+            // Calculate the remaining time units
+            const years = Math.floor(timeDifference / (1000 * 60 * 60 * 24 * 365));
+            const months = Math.floor((timeDifference % (1000 * 60 * 60 * 24 * 365)) / (1000 * 60 * 60 * 24 * 30.42));
+            const days = Math.floor((timeDifference % (1000 * 60 * 60 * 24 * 30.42)) / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+            const milliseconds = Math.floor(timeDifference % 1000);
+
+            // Display the countdown in the HTML
+            const countdownElement = document.querySelector('.countdown');
+            countdownElement.innerHTML = `Countdown: ${years} years, ${months} months, ${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds, ${milliseconds} milliseconds`;
+
+            // Update the countdown every 1 millisecond
+            setTimeout(updateCountdown, 1);
+        }
+
+        // Start the countdown
+        updateCountdown();
+    </script>
+  </div>  
   <div class="sticky">
     <nav class="navbar sticky">
       <img src="logo2.png">
